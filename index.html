@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger__style.css">
+    <link rel="stylesheet" href="break_point_style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="slider">
+            <div class="header">
+                <div class="logo"><img src="img/header/logos.png" alt="">
+                    <p class="logo">Waxom</p>
+                </div>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="index.html" class="header_link">Главная</a></li>
+                        <li><a href="" class="header_link">Каталог</a></li>
+                        <li><a href="" class="header_link">Оплата и доставка</a></li>
+                        <li><a href="" class="header_link">Инструкции</a></li>
+                        <li><a href=""><div class="card"><img src="img/header/icon-cart.png" alt=""></div></a></li>
+                        <li><a><div class="search" ><img src="img/header/icon-search.png" alt=""><input type="search"> <button>Go</button></div></a></li>
+
+                    </ul>
+                </nav>
+              
+            </div>
+
+            <div class="item">
+
+                <img src="img/slider/1.jpg" alt="Первый слайд">
+                <div class="slideText">
+                    <p class="slide-text-1">Unique and Modern Design</p>
+                    <p class="slide-text-2">Коврики ЭВА</p>
+                    <p class="slide-text-3">Сделайте заявку online!
+                        Заполните необходимые поля, и станьте обладателем ковриков EVA!</p>
+                    <button class="get_started" onclick="openWindow()">Заказать!</button>
+                </div>
+            </div>
+
+
+            <div class="item">
+
+                <img src="img/slider/2.jpg" alt="Второй слайд">
+                <div class="slideText">
+                    <p class="slide-text-1">Unique and Modern Design</p>
+                    <p class="slide-text-2">Коврики ЭВА</p>
+                    <p class="slide-text-3">Сделайте заявку online!
+                        Заполните необходимые поля, и станьте обладателем ковриков EVA!</p>
+                    <button class="get_started" onclick="openWindow()">Заказать!</button>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <img src="img/slider/3.jpg" alt="Третий слайд">
+                <div class="slideText">
+                    <p class="slide-text-1">Unique and Modern Design</p>
+                    <p class="slide-text-2">Коврики ЭВА</p>
+                    <p class="slide-text-3">Сделайте заявку online!
+                        Заполните необходимые поля, и станьте обладателем ковриков EVA!</p>
+                    <button class="get_started" onclick="openWindow()">Заказать!</button>
+                </div>
+            </div>
+
+            <a class="prev" onclick="minusSlide()"></a>
+            <a class="next" onclick="plusSlide()"></a>
+        </div>
+
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <div class="call_backForm" id="modals">
+            <form>
+                <h3>Оставьте заявку и мы свяжемся с вами</h3>
+                <input type="email" id="email" name="email" placeholder="Email"> <br>
+                <input type="text" id="name" name="name" placeholder="Введите имя"><br>
+                <input type="phone" id="phone" name="phone" placeholder="Ваш  номер телефона"><br>
+                <textarea name="message" id="message" cols="10" rows="10"  placeholder="Текст сообщения"></textarea><br>
+                <button type="button" id="sendMail" class="btn_callBack">Отправить</button><br>
+                <button type="button" onclick="closeWindow()" class="btn_callBack">Закрыть</button>
+                <div id="errorMess"></div>
+            </form>
+
+        </div>
+
+
+
+
+        <div class="services">
+
+            <div class="services_item">
+                <img src="img/cont/services/webApp.png" alt="app">
+                <p class="services_hide">Износостойкость</p>
+                <p class="services_text">Наши коврики прочные и не подвержены изменениям при колебаниях температуры,
+                    поэтому прослужат долго.</p>
+                <img src="img/cont/services/line.png" alt="line">
+            </div>
+            <div class="services_item">
+                <img src="img/cont/services/dev2.png" alt="design">
+                <p class="services_hide">Высокие технологии</p>
+                <p class="services_text">Они изготавливаются из инновационного материала EVA, благодаря чему обладают
+                    уникальными свойствами.</p>
+                <img src="img/cont/services/line.png" alt="line">
+            </div>
+            <div class="services_item">
+                <img src="img/cont/services/customization.png" alt="custom">
+                <p class="services_hide">Уникальное покрытие</p>
+                <p class="services_text">Их ячеистая структура – отличное решение для удержания воды, грязи и мелкого
+                    мусора без частой чистки</p>
+                <img src="img/cont/services/line.png" alt="line">
+            </div>
+            <div class="services_item">
+                <img src="img/cont/services/Marketing.png" alt="marketing">
+                <p class="services_hide">Доступны каждому</p>
+                <p class="services_text">Несмотря на все эти положительные характеристики, мы реализуем наши изделия на
+                    очень выгодных условиях.</p>
+                <img src="img/cont/services/line.png" alt="line">
+            </div>
+
+        </div>
+
+        <div class="slider_two">
+            <div class="slider_two_text">
+                <p class="services_hide">Что такое EVA коврики.</p>
+                <p class="services_text">ЭВА (EVA) — материал под названием "этиленвинилацетат".
+                    Этот материал уже давно и широко применяется в быту — при изготовлении обуви, напольных покрытий,
+                    игрушек,
+                    плёнок, шлангов, ковриков для йоги, спортивных матов и так далее. Позиционируется, как экологически
+                    безопасный.</p>
+            </div>
+
+            <div id="example3" class="container">
+                <img src="img/cont/slider_two/1-2.jpg" alt="Экологичность и противоаллергичность" />
+                <img src="img/cont/slider_two/2-2.jpg" alt=" Практичность" />
+                <img src="img/cont/slider_two/3-2.jpg" alt="Долговечность" />
+            </div>
+        </div>
+
+        <div class="adversiting">
+            <div class="wrap_text">
+                <p class="adversiting_hide"><span class="logo_text">Waxom</span> Multipurpose WordPress Theme</p>
+                <p class="adversiting_text">Don't Forget to Rate the Template. Thanks so much!</p>
+            </div>
+            <button class="get_started" id="advers_btn">Purchase Now</button>
+        </div>
+        <div class="content_two">
+            <div class="head_content">
+                <p class="services_hide">Универсальность и преимущества ЭВА ковриков в повседневной жизни</p>
+                <p class="services_text">ЭВА коврик для дома станет прекрасной покупкой, ведь при невысо
+                    кой цене он отличается долговечностью, и не менее практичен, чем в других сферах применения.
+                     Есть разные цвета и размеры, поэтому подобрать что-то себе по вкусу и такое, чтобы вписывалось в интерьер, будет совсем несложно.
+                    Закажите ЭВА коврик в прихожую, постелите его у входных дверей, и он станет надежным барьером между грязью и внутренними помещения
+                    ми. </p>
+            </div>
+
+            <div class="picturs">
+                <div class="picture_project"> <img src="img/cont_par2/project1-2.jpg" alt="project1"> </div>
+                <div class="picture_project"> <img src="img/cont_par2/project2-2.jpg" alt="project2"> </div>
+                <div class="picture_project"> <img src="img/cont_par2/project3-3.jpg" alt="project3"></div>
+                <div class="picture_project"> <img src="img/cont_par2/project4-4.jpg" alt="project4"></div>
+                <div class="picture_project"> <img src="img/cont_par2/project5-5.jpg" alt="project5"></div>
+                <div class="picture_project"> <img src="img/cont_par2/project6-6.jpg" alt="project6"></div>
+            </div>
+            <button class="get_started cont_two_btn" onclick="openWindow()">Заказать</button>
+        </div>
+        <div class="video">
+            <img src="img/cont_par2/video1.gif" alt="video" width="100%">
+        </div>
+
+        <div class="mobile_devices">
+            <div class="phone"><img src="img/modile/phone_in_hand2.png" alt="phone"></div>
+            <div class="phone_small"><img src="img/modile/phone_in_hand_min.png" alt="phone2"></div>
+            <div class="phone_text">
+                <p class="phon_hide">Подробнее про eva как полимерный материал.</p>
+                <p class="phone_tex">Eva (перевод на русский эва) – этиленвинилацетат. Полимерный материал нашёл широкое
+                    применение. Его преимущества:</p>
+                <div class="phone_text_min">
+                    <div class="phone_min"><img src="img/modile/arrowExcellent.png" alt="arrow">
+                        <p class="texto_phone">Не выделяет вредных веществ</p>
+                    </div>
+                    <div class="phone_min"><img src="img/modile/arrowExcellent.png" alt="arrow">
+                        <p class="texto_phone">Является экологически безопасным (используют вторично в качестве
+                            вспененного наполнителя)</p>
+                    </div>
+                    <div class="phone_min"><img src="img/modile/arrowExcellent.png" alt="arrow">
+                        <p class="texto_phone">Гипоаллергенный</p>
+                    </div>
+                    <div class="phone_min"><img src="img/modile/arrowExcellent.png" alt="arrow">
+                        <p class="texto_phone">Материал eva устойчив к воздействию химических веществ. Поэтому в
+                            поверхность автоковрика не въедается городская грязь.</p>
+                    </div>
+                    <div class="phone_min"><img src="img/modile/arrowExcellent.png" alt="arrow">
+                        <p class="texto_phone">Устойчивость к температурам. Материал стойко выдерживает как северные
+                            морозы, так и невыносимый южный зной. Он не меняет свою структуру в температурном диапазоне
+                            от -65 до +85°С.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="counters">
+
+            <div class="counters_content">
+                <img src="img/counters/1-2statisfield.png" alt="">
+                
+                <p class="count_text"> Севилен – достаточно жесткий и прочный материал.
+                     Коврики, изготовленные из него, состоят из ромбовидных ячеек глубиной 8 мм при общей толщине изделия 10 мм. 
+                     В результате им не требуются бортики для удержания воды – она равномерно распределяется по ячейкам, ч
+                     то невозможно в случае с резиновыми или текстильными изделиями.</p>
+                <img class="line_counters" src="img/counters/line_counterts.png" alt="">
+            </div>
+            <div class="counters_content">
+                <img src="img/counters/2-2Cup.png" alt="">
+                
+                <p class="count_text">Ячейки ковриков надежно удерживают воду. Чтобы ее вылить
+                    , изделие требуется держать практически вертикально. Это гарантирует, что вод
+                    а в салоне не будет расплескиваться, как может происходить с резиновыми изделиями.</p>
+                <img class="line_counters" src="img/counters/line_counterts.png" alt="">
+            </div>
+            <div class="counters_content">
+                <img src="img/counters/3-3blogs.png" alt="">
+                
+                <p class="count_text"> Так же надежно наши коврики удерживают 
+                    твердый мусор, песок или грунт и не дают им перемещаться по
+                     салону. Грязь собирается на дне ячеек и не мешается под но
+                     гами. Это бесспорное преимущество нашей продукции перед резиновыми и велюровыми аналогами.
+                </p>
+                <img class="line_counters" src="img/counters/line_counterts.png" alt="">
+            </div>
+            <div class="counters_content">
+                <img src="img/counters/4-4likes.png" alt="">
+                
+                <p class="count_text">Материал EVA рассчитан на эксплуатацию до -50 °С. Он н
+                    е твердеет и не подвержен образованию трещин, как это бывает с резиновыми изделиями.</p>
+                <img class="line_counters" src="img/counters/line_counterts.png" alt="">
+            </div>
+            <div class="counters_content">
+                <img src="img/counters/5-5launched.png" alt="">
+                
+                <p class="count_text"> После чистки коврики быс
+                    тро сохнут, поскольку они не впитывают влаг
+                    у. Этим EVA выгодно отличаются от текстиля, котор
+                    ый имеет ворсистую поверхность и прорезиненное дно, поэтому медленно отдает накопленную влагу</p>
+                <img class="line_counters" src="img/counters/line_counterts.png" alt="">
+            </div>
+        </div>
+
+        <div class="recent_slider">
+            <p class="services_hide">Recent Posts.</p>
+            <p class="services_text">Investigationes demonstraverunt lectores legere me lius quod ii
+                legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <div id="slider3">
+                <a class="control_next"><img src="img/recent_slider/arrow_right.png" alt=""></a>
+                <a class="control_prev"><img src="img/recent_slider/arrow_left.png" alt=""></a>
+                <ul>
+                    <li><img src="img/recent_slider/SlidePost1.png" alt=""> 1</li>
+                    <li><img src="img/recent_slider/SlidePost2.png" alt=""></li>
+                    <li> <img src="img/recent_slider/SlidePost3.png" alt=""></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <div id="back-top">
+                <a href="#" onclick="return up()"><img src="img/header/2.png" alt=""></a>  
+                </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/callBackForm.js"></script>
+        <script src="js/jquery.monte.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/2-slider.js"></script>
+        <script src="js/burger_menu/burger.js"></script>
+        
+
+    </div>
+
+</body>
+
+</html>
